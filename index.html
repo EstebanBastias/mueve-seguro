@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recupera Tu Dinero - Mueve Seguro (Edición Navidad)</title>
-    <meta name="description" content="Portabilidad de seguros de crédito. Recupera dinero de tu seguro de desgravamen y cesantía. Gestión 100% legal y online.">
+    <title>Recupera Tu Dinero - Mueve Seguro (Edición Verano)</title>
+    <meta name="description" content="Portabilidad de seguros de crédito. Financia tus vacaciones recuperando tu dinero. Gestión 100% legal y online.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -16,14 +16,14 @@
         h1, h2, h3, h4 {
             font-family: 'Montserrat', sans-serif;
         }
-        /* Fondo con toque navideño elegante */
+        /* Fondo Veraniego y Fresco */
         .hero-bg {
-            background: linear-gradient(rgba(0, 40, 100, 0.9), rgba(180, 20, 20, 0.85)), url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background: linear-gradient(rgba(0, 150, 200, 0.8), rgba(0, 80, 150, 0.85)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
         }
-        .clip-path-slant {
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        .clip-path-wave {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
         }
         
         /* Botón Flotante de WhatsApp */
@@ -50,127 +50,126 @@
             background-color: #20ba5a;
         }
         
-        /* Animación de Pulso para llamar la atención */
-        .pulse-anim {
-            animation: pulse 2s infinite;
+        /* Animación Sol Brillando */
+        .sun-spin {
+            animation: spin-slow 10s infinite linear;
         }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); } /* Rojo navidad */
-            70% { box-shadow: 0 0 0 20px rgba(220, 38, 38, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
-        /* Ajustes para impresión por si el cliente quiere guardar la info */
+        /* Ajustes para impresión */
         @media print {
             .whatsapp-float, .no-print { display: none !important; }
-            .clip-path-slant { clip-path: none !important; padding-bottom: 2rem !important; }
+            .clip-path-wave { clip-path: none !important; padding-bottom: 2rem !important; }
             body { color: #000; }
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-blue-50 text-gray-800">
 
     <!-- Navbar -->
     <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <span class="text-2xl font-bold text-red-700 flex items-center">
-                    <i class="fas fa-gift mr-2 text-green-600"></i> Mueve Seguro
+                <span class="text-2xl font-bold text-blue-600 flex items-center">
+                    <i class="fas fa-sun mr-2 text-yellow-500 sun-spin"></i> Mueve Seguro
                 </span>
             </div>
-            <a href="https://wa.me/56927591844?text=Hola,%20quiero%20evaluar%20mi%20seguro%20de%20crédito%20y%20ver%20si%20tengo%20devolución." target="_blank" class="hidden md:block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 shadow-lg">
+            <a href="https://wa.me/56927591844?text=Hola,%20quiero%20evaluar%20mi%20caso%20para%20mis%20vacaciones." target="_blank" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 shadow-lg">
                 <i class="fab fa-whatsapp mr-1"></i> Contactar Asesor
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-bg text-white pt-32 pb-24 clip-path-slant relative">
-        <!-- Decoración Navideña sutil -->
-        <div class="absolute top-20 right-10 text-white opacity-20 text-9xl hidden md:block">
-            <i class="fas fa-snowflake fa-spin" style="animation-duration: 15s;"></i>
+    <header class="hero-bg text-white pt-32 pb-32 clip-path-wave relative">
+        <!-- Decoración Sol -->
+        <div class="absolute top-10 right-10 text-yellow-300 opacity-30 text-9xl hidden md:block">
+            <i class="fas fa-sun sun-spin"></i>
         </div>
 
         <div class="container mx-auto px-6 text-center md:text-left relative z-10">
             <div class="md:w-3/4">
-                <span class="bg-red-600 text-white font-bold py-1 px-4 rounded-full text-sm uppercase tracking-wider mb-4 inline-block shadow-lg border-2 border-white">
-                    <i class="fas fa-sleigh"></i> ¡Tu aguinaldo extra!
+                <span class="bg-yellow-400 text-blue-900 font-bold py-1 px-4 rounded-full text-sm uppercase tracking-wider mb-4 inline-block shadow-lg">
+                    <i class="fas fa-umbrella-beach"></i> ¡Disfruta sin culpas!
                 </span>
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-shadow">
-                    Esta Navidad... <br>
-                    <span class="text-yellow-400">Recupera dinero de tu Seguro.</span>
+                    Este Verano... <br>
+                    <span class="text-yellow-300">Que tu seguro pague las vacaciones.</span>
                 </h1>
-                <p class="text-lg md:text-xl mb-8 text-gray-100 font-medium">
-                    Tienes un regalo esperando. Portamos tu seguro de crédito, mantenemos tu cobertura y te generamos una devolución de dinero para tus fiestas.
+                <p class="text-lg md:text-xl mb-8 text-blue-100 font-medium">
+                    Recupera dinero de tu seguro de crédito y úsalo para viajar, descansar o darte esos gustos de febrero.
                 </p>
                 <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                    <a href="https://wa.me/56927591844?text=Hola,%20me%20interesa%20saber%20cuánto%20dinero%20puedo%20recuperar%20de%20mi%20seguro." target="_blank" class="bg-yellow-400 text-red-900 hover:bg-yellow-300 font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 text-center text-lg transform hover:scale-105">
-                        <i class="fab fa-whatsapp mr-2"></i> Evaluar mi Caso Gratis
+                    <a href="https://wa.me/56927591844?text=Hola,%20necesito%20lucas%20para%20el%20verano,%20quiero%20evaluar%20mi%20seguro." target="_blank" class="bg-yellow-400 text-blue-900 hover:bg-yellow-300 font-bold py-4 px-8 rounded-full shadow-lg transition duration-300 text-center text-lg transform hover:scale-105 border-b-4 border-yellow-600">
+                        <i class="fab fa-whatsapp mr-2"></i> ¡Quiero mis Lucas de Verano!
                     </a>
                 </div>
-                <p class="mt-6 text-sm text-gray-200 font-semibold"><i class="fas fa-check-circle text-green-400 mr-1"></i> Trámite 100% Legal y Regulado por la CMF</p>
+                <p class="mt-6 text-sm text-blue-200 font-semibold"><i class="fas fa-check-circle text-green-400 mr-1"></i> Trámite 100% Legal y Regulado por la CMF</p>
             </div>
         </div>
     </header>
 
     <!-- Value Proposition Cards -->
-    <section class="container mx-auto px-6 -mt-16 relative z-10 mb-20">
+    <section class="container mx-auto px-6 -mt-20 relative z-10 mb-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-red-600 hover:-translate-y-2 transition duration-300">
-                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 text-red-600 text-3xl">
-                    <i class="fas fa-gift"></i>
+            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-yellow-400 hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-yellow-600 text-3xl">
+                    <i class="fas fa-plane-departure"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-red-800">Recibe tu Cashback</h3>
-                <p class="text-gray-600">Al cambiarte a una compañía más justa, se genera un excedente. ¡Ese dinero es el mejor regalo para tu bolsillo!</p>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Financia tu Viaje</h3>
+                <p class="text-gray-600">Ese excedente de dinero puede ser el arriendo de la cabaña, los pasajes o las salidas a comer en la playa.</p>
             </div>
             <!-- Card 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-green-600 hover:-translate-y-2 transition duration-300">
-                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-600 text-3xl">
-                    <i class="fas fa-shield-alt"></i>
+            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-blue-500 hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600 text-3xl">
+                    <i class="fas fa-umbrella-beach"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-green-800">Misma Cobertura</h3>
-                <p class="text-gray-600">Tu protección no cambia. Cumplimos con todos los requisitos de tu acreedor, pero a un precio justo y sin sobrecostos.</p>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Relájate de Verdad</h3>
+                <p class="text-gray-600">Disfruta tus días libres sabiendo que recuperaste dinero que dabas por perdido. Vacaciones inteligentes.</p>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-yellow-500 hover:-translate-y-2 transition duration-300">
-                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-yellow-600 text-3xl">
-                    <i class="fas fa-glass-cheers"></i>
+            <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-orange-500 hover:-translate-y-2 transition duration-300">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 text-orange-600 text-3xl">
+                    <i class="fas fa-file-signature"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-yellow-700">Nosotros Gestionamos</h3>
-                <p class="text-gray-600">Relájate y disfruta las fiestas. Nosotros hacemos todo el trámite con la aseguradora y el banco.</p>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Sin moverte del sol</h3>
+                <p class="text-gray-600">No pierdas tiempo en filas. Hacemos todo 100% online mientras tú disfrutas del verano.</p>
             </div>
         </div>
     </section>
 
     <!-- Is it Legal? Section -->
-    <section class="bg-gray-100 py-16">
+    <section class="bg-white py-16">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Documentos Legales" class="rounded-lg shadow-2xl border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Documentos Legales" class="rounded-lg shadow-2xl border-4 border-blue-100">
             </div>
             <div class="md:w-1/2 md:pl-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">¿Es esto legal? ¡Totalmente!</h2>
                 <p class="text-lg text-gray-700 mb-6">
-                    Mueve Seguro actúa estrictamente bajo las normativas vigentes en Chile. Es tu derecho elegir.
+                    Mueve Seguro actúa estrictamente bajo las normativas vigentes en Chile. Es tu derecho elegir y portarte.
                 </p>
                 <ul class="space-y-4">
                     <li class="flex items-start">
-                        <i class="fas fa-gavel text-red-600 mt-1 mr-3 text-xl"></i>
+                        <i class="fas fa-gavel text-blue-500 mt-1 mr-3 text-xl"></i>
                         <div>
                             <strong class="block text-gray-900">Circular 2114 (CMF)</strong>
                             <span class="text-sm text-gray-600">Regula la contratación de seguros asociados a créditos.</span>
                         </div>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-balance-scale text-red-600 mt-1 mr-3 text-xl"></i>
+                        <i class="fas fa-balance-scale text-blue-500 mt-1 mr-3 text-xl"></i>
                         <div>
                             <strong class="block text-gray-900">Ley 19.496, Art. 17D</strong>
                             <span class="text-sm text-gray-600">Protección de los derechos de los consumidores.</span>
                         </div>
                     </li>
                      <li class="flex items-start">
-                        <i class="fas fa-landmark text-red-600 mt-1 mr-3 text-xl"></i>
+                        <i class="fas fa-landmark text-blue-500 mt-1 mr-3 text-xl"></i>
                         <div>
                             <strong class="block text-gray-900">Ley 20.448, Art. 8</strong>
                             <span class="text-sm text-gray-600">Portabilidad Financiera.</span>
@@ -182,58 +181,58 @@
     </section>
 
     <!-- Requirements Section -->
-    <section class="py-20 bg-white relative">
+    <section class="py-20 bg-blue-50 relative">
         <!-- Decoración pequeña -->
-        <div class="absolute top-0 right-0 p-4 opacity-10 text-red-600 text-6xl"><i class="fas fa-candy-cane"></i></div>
+        <div class="absolute top-0 right-0 p-4 opacity-10 text-orange-500 text-6xl"><i class="fas fa-sun"></i></div>
 
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Requisitos para tu Regalo de Fin de Año</h2>
-            <p class="text-xl text-gray-600 mb-12">Si cumples con estos puntos, es muy probable que tengas dinero esperando por ti.</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Requisitos para tu Bono de Verano</h2>
+            <p class="text-xl text-gray-600 mb-12">Si cumples con estos puntos, prepárate para recibir tu dinero en Febrero.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
                 <!-- Requisito 1 -->
-                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-600 flex items-start">
-                    <i class="fas fa-check-circle text-green-600 mt-1 mr-4 text-xl"></i>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-500 flex items-start shadow-sm">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-4 text-xl"></i>
                     <div>
                         <span class="font-semibold text-gray-800 block mb-1">Tipo de Crédito</span>
                         <span class="text-sm text-gray-600">Vigente: Consumo, Automotriz, PYME, Comercial, Empresarial o Libre Disposición.</span>
                     </div>
                 </div>
                 <!-- Requisito 2 -->
-                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-600 flex items-start">
-                    <i class="fas fa-check-circle text-green-600 mt-1 mr-4 text-xl"></i>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-500 flex items-start shadow-sm">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-4 text-xl"></i>
                     <div>
                         <span class="font-semibold text-gray-800 block mb-1">Seguros Activos</span>
                         <span class="text-sm text-gray-600">Debes tener seguro de desgravamen y cesantía activos.</span>
                     </div>
                 </div>
                 <!-- Requisito 3 -->
-                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-600 flex items-start">
-                    <i class="fas fa-check-circle text-green-600 mt-1 mr-4 text-xl"></i>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-500 flex items-start shadow-sm">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-4 text-xl"></i>
                     <span class="font-semibold text-gray-800 self-center">Cédula de identidad vigente.</span>
                 </div>
                 <!-- Requisito 4 -->
-                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-600 flex items-start">
-                    <i class="fas fa-check-circle text-green-600 mt-1 mr-4 text-xl"></i>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-500 flex items-start shadow-sm">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-4 text-xl"></i>
                     <div>
                         <span class="font-semibold text-gray-800 block mb-1">Antigüedad</span>
                         <span class="text-sm text-gray-600">Al menos 60 días desde contratación (¡Podemos congelar primas antes!).</span>
                     </div>
                 </div>
                 <!-- Requisito 5 -->
-                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-600 flex items-start">
-                    <i class="fas fa-check-circle text-green-600 mt-1 mr-4 text-xl"></i>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-500 flex items-start shadow-sm">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-4 text-xl"></i>
                     <span class="font-semibold text-gray-800 self-center">Haber pagado al menos 1 cuota.</span>
                 </div>
                 <!-- Requisito 6 -->
-                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-600 flex items-start">
-                    <i class="fas fa-check-circle text-green-600 mt-1 mr-4 text-xl"></i>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-blue-500 flex items-start shadow-sm">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-4 text-xl"></i>
                     <span class="font-semibold text-gray-800 self-center">Que te queden al menos 6 cuotas por pagar.</span>
                 </div>
             </div>
 
             <div class="mt-12">
-                <a href="https://wa.me/56927591844?text=Hola,%20cumplo%20con%20los%20requisitos,%20quiero%20gestionar%20mi%20devolución." target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transform transition hover:scale-105 border-b-4 border-green-800">
+                <a href="https://wa.me/56927591844?text=Hola,%20cumplo%20con%20los%20requisitos,%20quiero%20mi%20dinero%20para%20vacaciones." target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transform transition hover:scale-105 border-b-4 border-orange-700">
                     <i class="fab fa-whatsapp"></i> ¡Cumplo los requisitos! Quiero mi dinero
                 </a>
             </div>
@@ -241,19 +240,19 @@
     </section>
 
     <!-- Process Timeline -->
-    <section class="bg-red-900 text-white py-20">
+    <section class="bg-blue-800 text-white py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-16">¿Cómo funciona el proceso?</h2>
             
             <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 relative">
                 <!-- Line connector for desktop -->
-                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-red-700 transform -translate-y-1/2 z-0"></div>
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-blue-600 transform -translate-y-1/2 z-0"></div>
 
                 <!-- Step 1 -->
                 <div class="relative z-10 w-64 text-center">
-                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-red-900 text-2xl font-bold mb-4 shadow-lg border-4 border-yellow-400">1</div>
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-blue-900 text-2xl font-bold mb-4 shadow-lg border-4 border-yellow-400">1</div>
                     <h3 class="text-xl font-bold mb-2">Evaluación</h3>
-                    <p class="text-red-100 text-sm">Calculamos tu devolución gratis.</p>
+                    <p class="text-blue-100 text-sm">Calculamos tu devolución gratis.</p>
                 </div>
 
                 <!-- Spacer -->
@@ -261,9 +260,9 @@
 
                 <!-- Step 2 -->
                 <div class="relative z-10 w-64 text-center">
-                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-red-900 text-2xl font-bold mb-4 shadow-lg border-4 border-yellow-400">2</div>
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center text-blue-900 text-2xl font-bold mb-4 shadow-lg border-4 border-yellow-400">2</div>
                     <h3 class="text-xl font-bold mb-2">Firma Digital</h3>
-                    <p class="text-red-100 text-sm">Todo online, sin salir de casa.</p>
+                    <p class="text-blue-100 text-sm">Todo online, sin salir de casa.</p>
                 </div>
 
                 <!-- Spacer -->
@@ -271,100 +270,100 @@
 
                 <!-- Step 3 -->
                 <div class="relative z-10 w-64 text-center">
-                    <div class="w-20 h-20 mx-auto bg-green-500 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4 shadow-lg pulse-anim border-4 border-white"><i class="fas fa-gift"></i></div>
-                    <h3 class="text-xl font-bold mb-2">¡Recibe tu Dinero!</h3>
-                    <p class="text-red-100 text-sm">Saldo directo a tu cuenta bancaria.</p>
+                    <div class="w-20 h-20 mx-auto bg-green-500 rounded-full flex items-center justify-center text-white text-3xl font-bold mb-4 shadow-lg border-4 border-white"><i class="fas fa-money-bill-wave"></i></div>
+                    <h3 class="text-xl font-bold mb-2">¡A Disfrutar!</h3>
+                    <p class="text-blue-100 text-sm">Dinero directo para tu verano.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="bg-gray-50 py-20">
+    <section class="bg-white py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Ellos ya recuperaron su dinero 🎄</h2>
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Veranos financiados por Mueve Seguro 🏖️</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonio 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-b-4 border-green-500 hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-lg border-b-4 border-blue-400 hover:-translate-y-1 transition duration-300">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-xl mr-4">MR</div>
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-blue-700 font-bold text-xl mr-4">MR</div>
                         <div>
                             <h4 class="font-bold text-gray-900">Marcela Rojas</h4>
                             <p class="text-sm text-gray-500">Enfermera</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Pensé que era complicado, pero Jéssica se encargó de todo. Recuperé casi $450.000 que no sabía que tenía, justo a tiempo para los regalos de Navidad. ¡Increíble!"</p>
-                    <div class="mt-4 text-yellow-400 text-sm">
+                    <p class="text-gray-600 italic">"Con lo que recuperé pagué el arriendo de la cabaña en el sur por 5 días. Fue un alivio tremendo no tener que endeudarme para salir de vacaciones."</p>
+                    <div class="mt-4 text-yellow-500 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                 </div>
                 <!-- Testimonio 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-b-4 border-red-500 hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-lg border-b-4 border-yellow-400 hover:-translate-y-1 transition duration-300">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-bold text-xl mr-4">CV</div>
+                        <div class="w-12 h-12 bg-yellow-200 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl mr-4">CV</div>
                         <div>
                             <h4 class="font-bold text-gray-900">Cristián Valenzuela</h4>
                             <p class="text-sm text-gray-500">Dueño de Pyme</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Como emprendedor, cada peso cuenta. Bajaron mi seguro de desgravamen y además me devolvieron los excedentes. 100% recomendado para empresas."</p>
-                    <div class="mt-4 text-yellow-400 text-sm">
+                    <p class="text-gray-600 italic">"Como pyme, enero y febrero son lentos. Este dinero extra me sirvió para estar tranquilo y disfrutar con mi familia sin pensar tanto en las cuentas."</p>
+                    <div class="mt-4 text-yellow-500 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                 </div>
                 <!-- Testimonio 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-b-4 border-blue-500 hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-lg border-b-4 border-orange-400 hover:-translate-y-1 transition duration-300">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl mr-4">PG</div>
+                        <div class="w-12 h-12 bg-orange-200 rounded-full flex items-center justify-center text-orange-700 font-bold text-xl mr-4">PG</div>
                         <div>
                             <h4 class="font-bold text-gray-900">Patricia González</h4>
                             <p class="text-sm text-gray-500">Administrativa</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Hice todo el trámite por WhatsApp sin ir a ninguna oficina ni notaría. La devolución llegó directo a mi cuenta antes de lo esperado. Muy confiable."</p>
-                    <div class="mt-4 text-yellow-400 text-sm">
+                    <p class="text-gray-600 italic">"Hice el trámite desde la playa por el celular. Súper fácil. La plata llegó justo para cubrir los gastos de marzo, así que terminé mis vacaciones relajada."</p>
+                    <div class="mt-4 text-yellow-500 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                 </div>
                 <!-- Testimonio 4 (Regalar plata al banco) -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-b-4 border-yellow-500 hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-lg border-b-4 border-red-400 hover:-translate-y-1 transition duration-300">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-bold text-xl mr-4">RA</div>
+                        <div class="w-12 h-12 bg-red-200 rounded-full flex items-center justify-center text-red-700 font-bold text-xl mr-4">RA</div>
                         <div>
                             <h4 class="font-bold text-gray-900">Roberto Aravena</h4>
                             <p class="text-sm text-gray-500">Ingeniero</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Me dio rabia darme cuenta de que estuve años regalándole plata al banco por no saber esto. El trámite fue simple y recuperé lo que era mío. Ojalá lo hubiera hecho antes."</p>
-                    <div class="mt-4 text-yellow-400 text-sm">
+                    <p class="text-gray-600 italic">"Me dio rabia pensar que regalaba plata al banco. Ahora ese dinero lo estoy disfrutando yo con mi señora en la playa. Ojalá lo hubiera hecho antes."</p>
+                    <div class="mt-4 text-yellow-500 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                 </div>
                 <!-- Testimonio 5 (Más de lo esperado) -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-b-4 border-purple-500 hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-lg border-b-4 border-purple-400 hover:-translate-y-1 transition duration-300">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-xl mr-4">CS</div>
+                        <div class="w-12 h-12 bg-purple-200 rounded-full flex items-center justify-center text-purple-700 font-bold text-xl mr-4">CS</div>
                         <div>
                             <h4 class="font-bold text-gray-900">Camila Soto</h4>
                             <p class="text-sm text-gray-500">Profesora</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Me proyectaron un monto inicial, pero al final recibí más de lo esperado. Fue una sorpresa gigante ver ese depósito extra en mi cuenta. Totalmente feliz."</p>
-                    <div class="mt-4 text-yellow-400 text-sm">
+                    <p class="text-gray-600 italic">"Me proyectaron un monto, pero recibí más de lo esperado. Fue una sorpresa gigante ver ese depósito extra para mis vacaciones. Feliz."</p>
+                    <div class="mt-4 text-yellow-500 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                 </div>
                 <!-- Testimonio 6 (Rapidez/Sorpresa) -->
-                <div class="bg-white p-6 rounded-lg shadow-lg border-b-4 border-indigo-500 hover:-translate-y-1 transition duration-300">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-lg border-b-4 border-green-400 hover:-translate-y-1 transition duration-300">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold text-xl mr-4">FM</div>
+                        <div class="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center text-green-700 font-bold text-xl mr-4">FM</div>
                         <div>
                             <h4 class="font-bold text-gray-900">Felipe Morales</h4>
                             <p class="text-sm text-gray-500">Logística</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Lo hice por probar, sin mucha fe. No contaba con recibir el dinero tan rápido, en unas semanas ya estaba el depósito disponible. Servicio serio y rápido."</p>
-                    <div class="mt-4 text-yellow-400 text-sm">
+                    <p class="text-gray-600 italic">"No contaba con recibir el dinero tan rápido. En unas semanas ya estaba el depósito disponible para usarlo en mis días libres. Servicio 10/10."</p>
+                    <div class="mt-4 text-yellow-500 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                 </div>
@@ -377,13 +376,13 @@
         <div class="container mx-auto px-6 text-center">
             <div class="mb-6">
                 <h3 class="text-2xl font-bold text-white mb-2 flex justify-center items-center">
-                    <i class="fas fa-shield-alt mr-2 text-red-600"></i> Mueve Seguro
+                    <i class="fas fa-sun mr-2 text-yellow-500"></i> Mueve Seguro
                 </h3>
-                <p>La portabilidad nunca fue tan fácil.</p>
+                <p>Tu dinero, donde corresponde (en tu bolsillo).</p>
             </div>
             
             <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
-                <a href="https://wa.me/56927591844?text=Hola,%20quisiera%20mayor%20información%20sobre%20el%20proceso%20de%20devolución%20de%20seguros." target="_blank" class="text-2xl text-green-500 hover:text-green-400 no-underline font-bold transition">
+                <a href="https://wa.me/56927591844?text=Hola,%20quisiera%20mayor%20información%20sobre%20el%20proceso%20de%20devolución%20para%20este%20verano." target="_blank" class="text-2xl text-green-500 hover:text-green-400 no-underline font-bold transition">
                     <i class="fab fa-whatsapp mr-2"></i> +56 9 2759 1844
                 </a>
                 <a href="mailto:Jessica.Diaz@mueveseguro.cl" class="text-xl text-blue-400 hover:text-blue-300 no-underline font-bold transition">
@@ -397,7 +396,7 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/56927591844?text=Hola,%20quisiera%20mayor%20información%20sobre%20cómo%20recuperar%20mi%20seguro%20esta%20Navidad." class="whatsapp-float pulse-anim" target="_blank">
+    <a href="https://wa.me/56927591844?text=Hola,%20quisiera%20recuperar%20mi%20dinero%20para%20mis%20vacaciones." class="whatsapp-float sun-spin" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
